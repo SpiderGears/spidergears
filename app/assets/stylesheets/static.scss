@@ -1,0 +1,77 @@
+// Place all the styles related to the static controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h2 a{
+  text-decoration: none;
+  color: #000000;
+}
+
+table tr td{
+  text-align: left;
+  font-size: 15px;
+  padding: 5px;
+}
+
+table tr td a{
+  text-decoration: none;
+  color: #000080;
+  font-size: 30px;
+  font-style: italic;
+}
+
+
+.body{
+  background-color: #ff9a2e;
+  text-align: center;
+}
+
+.medium{
+  position: relative;
+  left: 22%;
+  padding-top: 10px;
+}
+
+.box{
+  width: 50%;
+  background: #FFF;
+  margin: 40px auto;
+  border-width: 7px; 
+  border-style: solid; 
+  border-color: #ffffff; 
+  border-radius: 5px; 
+}
+
+.shadow{
+  position: relative;
+  overflow: none;
+}
+
+.shadow:before, .shadow:after{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 25px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  -webkit-box-shadow: 0 35px 20px #777;
+  -moz-box-shadow: 0 35px 20px #777;
+  box-shadow: 0 35px 20px #777;
+  -webkit-transform: rotate(-8deg);
+  -moz-transform: rotate(-8deg);
+  -o-transform: rotate(-8deg);
+  -ms-transform: rotate(-8deg);
+  transform: rotate(-8deg);
+}
+
+.shadow:after{
+  -webkit-transform: rotate(8deg);
+  -moz-transform: rotate(8deg);
+  -o-transform: rotate(8deg);
+  -ms-transform: rotate(8deg);
+  transform: rotate(8deg);
+  right: 10px;
+  left: auto;
+}
